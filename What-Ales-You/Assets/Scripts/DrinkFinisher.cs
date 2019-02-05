@@ -7,7 +7,7 @@ public class DrinkFinisher : Interactable
     public DrinkBuilder mat;
     public bool isShaker;
 
-    private void OnMouseDown()
+    public void Finish()
     {
         mat.Build(isShaker);
     }

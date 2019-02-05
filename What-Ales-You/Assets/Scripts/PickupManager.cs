@@ -22,7 +22,7 @@ public class PickupManager : MonoBehaviour
             if (!isHolding)
             {
                 Debug.Log("Isn't Holding Anything");
-                Pickup();
+                Interact();
             }else
             {
                 this.Use();
@@ -37,17 +37,27 @@ public class PickupManager : MonoBehaviour
         }
     }
 
-    void Pickup()
+    void Interact()
     {
         RaycastHit hit;
         if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range)){
-            Debug.Log("Hit " + hit.transform.name);
+            //Testing for Holdable
+            //Debug.Log("Hit " + hit.transform.name);
             held = hit.transform.GetComponent<Holdable>();
-            Debug.Log("Holding " + held.transform.name);
+            //Debug.Log("Holding " + held.transform.name);
             if (held != null)
             {
                 isHolding = true;
                 held.MoveToHand(holdLoc);
+            }
+
+            //Testing for Drink Finisher
+            DrinkFinisher finisher;
+            finisher = hit.transform.GetComponent<DrinkFinisher>();
+
+            if(finisher != null)
+            {
+                finisher.Finish();
             }
         }
     }
