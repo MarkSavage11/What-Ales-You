@@ -49,7 +49,7 @@ public class Holdable : Interactable
             }
             else
             {
-                GoHome();
+                //GoHome();
             }
         }
 

@@ -83,7 +83,9 @@ public class PickupManager : MonoBehaviour
             if (other != null)
             {
                 ///BAD DON"T DO THIS
-                this.isHolding = false;
+                if (!held.ingredient) { 
+                    this.isHolding = false;
+                }
                 this.held.Interact(other);
             }
         }
