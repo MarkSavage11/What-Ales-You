@@ -10,11 +10,12 @@ public class Interactable : MonoBehaviour
     public Image reticle;
     public Sprite defaultReticle;
     public Sprite handReticle;
+    public new string name;
 
     public void OnMouseEnter()
     {
         reticle.sprite = handReticle;
-        hoverText.text = "| " + this.name;
+        hoverText.text = "| " + this.GetComponent<Interactable>().name;
     }
 
     public void OnMouseExit()

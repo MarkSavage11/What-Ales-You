@@ -6,6 +6,7 @@ public class DrinkBuilder : Interactable
 {
     public string glassName;
     public List<string> ingredients;
+    public Animator playerAnim;
 
     public void Add(Holdable other)
     {
@@ -14,6 +15,7 @@ public class DrinkBuilder : Interactable
             this.glassName = other.name;
         }else
         {
+            playerAnim.SetTrigger("Pour");
             ingredients.Add(other.name);
         }
     }

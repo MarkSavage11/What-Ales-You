@@ -50,6 +50,8 @@ ModelImporter:
     3300002: pSphere2
     4300000: pSphere2
     4300002: pCylinder5
+    6400000: pCylinder5
+    6400002: pSphere2
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -84,7 +86,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
