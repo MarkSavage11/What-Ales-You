@@ -20,6 +20,13 @@ public class Holdable : Interactable
 
     public void MoveToHand(Transform hand)
     {
+        //Checks to see if it is placed in a Node
+        PlaceNode node = this.GetComponentInParent<PlaceNode>();
+        if (node != null)
+        {
+            node.full = false;
+        }
+
         this.transform.SetPositionAndRotation(hand.position, hand.rotation);
         this.transform.SetParent(hand);
         this.hand = hand;
@@ -47,10 +54,7 @@ public class Holdable : Interactable
                 this.transform.parent = null;
                 this.transform.SetPositionAndRotation(mat.transform.position, mat.transform.rotation);
             }
-            else
-            {
-                //GoHome();
-            }
+           
         }
 
     }
