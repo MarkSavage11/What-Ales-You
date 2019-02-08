@@ -17,18 +17,18 @@ public class PickupManager : MonoBehaviour
     void Update()
     {
        
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
             if (!isHolding)
             {
-                Debug.Log("Isn't Holding Anything");
+                //Debug.Log("Isn't Holding Anything");
                 Interact();
             }else
             {
                 this.Use();
             }
         }
-        if (Input.GetMouseButton(1))
+        if (Input.GetMouseButtonDown(1))
         {
             if (isHolding) {
                 Place();
@@ -64,13 +64,35 @@ public class PickupManager : MonoBehaviour
 
     void Place()
     {
-        if(held != null)
+        if (held != null)
         {
-            this.isHolding = false;
-            held.GoHome();
-            this.held = null;
+            
+
+            RaycastHit hit;
+            if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range))
+            {
+                
+                PlaceNode node;
+                node = hit.transform.GetComponent<PlaceNode>();
+                if (node != null)
+                {
+                    
+                    if (!node.full)
+                    {
+                        this.isHolding = false;
+                        this.held.transform.SetPositionAndRotation(node.transform.position, node.transform.rotation);
+                        node.full = true;
+                        held.transform.parent = node.transform;
+                        this.held = null;
+                        
+                    }
+                }
+            }
+
+
         }
     }
+        
 
     //Shouldn't be called if isHolding = false;
     void Use()
@@ -78,14 +100,18 @@ public class PickupManager : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range))
         {
+            //Interactable
             Interactable other;
             other = hit.transform.GetComponent<Interactable>();
             if (other != null)
             {
-                ///BAD DON"T DO THIS
-                this.isHolding = false;
+                //This has to happen in order to place the glass on the drink mat
+                if (!held.ingredient) { 
+                    this.isHolding = false;
+                }
                 this.held.Interact(other);
             }
+            
         }
     }
 }

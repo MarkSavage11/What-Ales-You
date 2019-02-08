@@ -6,21 +6,37 @@ using UnityEngine.UI;
 
 public class Holdable : Interactable
 {
-    public Transform homePos;
-    public new string name;
+    private Vector3 homePos;
+    private Quaternion homeRotation;
     public bool ingredient;
-    
+
+    private Transform hand;
+
+    public void Awake()
+    {
+        this.homePos = this.transform.position;
+        this.homeRotation = this.transform.rotation;
+    }
 
     public void MoveToHand(Transform hand)
     {
+        //Checks to see if it is placed in a Node
+        PlaceNode node = this.GetComponentInParent<PlaceNode>();
+        if (node != null)
+        {
+            node.full = false;
+        }
+
         this.transform.SetPositionAndRotation(hand.position, hand.rotation);
         this.transform.SetParent(hand);
+        this.hand = hand;
     }
 
     public void GoHome()
     {
         this.transform.parent = null;
-        this.transform.SetPositionAndRotation(homePos.position, homePos.rotation);
+        this.transform.SetPositionAndRotation(homePos, homeRotation);
+        this.hand = null;
 
     }
 
@@ -29,15 +45,16 @@ public class Holdable : Interactable
         //Try Drinkbuilder 
         DrinkBuilder mat;
         mat = other.transform.GetComponent<DrinkBuilder>();
-        mat.Add(this);
+        if (mat != null)
+        {
+            mat.Add(this);
 
-        if (!this.ingredient)
-        {
-            this.transform.parent = null;
-            this.transform.SetPositionAndRotation(mat.transform.position, mat.transform.rotation);
-        }else
-        {
-            GoHome();
+            if (!this.ingredient)
+            {
+                this.transform.parent = null;
+                this.transform.SetPositionAndRotation(mat.transform.position, mat.transform.rotation);
+            }
+           
         }
 
     }
