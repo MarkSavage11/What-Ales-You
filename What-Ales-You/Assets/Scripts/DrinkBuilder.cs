@@ -18,7 +18,7 @@ public class DrinkBuilder : Interactable {
             new List<string>() { "Tennessee Mule", "Ginger Beer", "Lime Juice", "Whiskey", "NULL", "NULL", "stirred", "Tankard" },
             new List<string>() { "Jack & Coke", "Whiskey", "Coke", "NULL", "NULL", "NULL", "stirred", "Collins Glass" },
             new List<string>() { "Rum & Coke", "Rum", "Coke", "NULL", "NULL", "NULL", "stirred", "Collins Glass" },
-            new List<string>() { "Whiskey Sour", "Whiskey", "Lime Juice", "Egg Whites", "Syrup", "NULL", "shaken", "Old-Fashioned Glass" },
+            new List<string>() { "Whiskey Sour", "Whiskey", "Lime Juice", "Egg Whites", "Simple Syrup", "NULL", "shaken", "Old-Fashioned Glass" },
             new List<string>() { "Vodka Cranberry", "Cranberry Juice", "Lime Juice", "Orange Juice", "Vodka", "NULL", "stirred", "Highball Glass" },
             new List<string>() { "Screwdriver", "Orange Juice", "Vodka", "NULL", "NULL", "NULL", "stirred", "Highball Glass" }
         };
