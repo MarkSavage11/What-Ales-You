@@ -1045,7 +1045,7 @@ MonoBehaviour:
   reticle: {fileID: 1495829862}
   defaultReticle: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   handReticle: {fileID: 21300000, guid: 9866a92691696b346901281f2b329034, type: 3}
-  name: Highball Glass
+  name: Old-Fashioned Glass
   ingredient: 0
 --- !u!65 &423481488
 BoxCollider:
@@ -1758,7 +1758,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100004, guid: d1fe69d2a65398e46874f39b822ecd39, type: 3}
       propertyPath: m_Name
-      value: Old Fashioned Glass (1)
+      value: Old-Fashioned Glass (1)
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: d1fe69d2a65398e46874f39b822ecd39, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1815,7 +1815,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 6e9739960ee6b2b4cb86e7226cb54002, type: 3}
       propertyPath: m_Name
-      value: Whisky
+      value: Whiskey
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6e9739960ee6b2b4cb86e7226cb54002, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2362,7 +2362,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh12222
+  m_Name: pb_Mesh4854
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -2614,7 +2614,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh12134
+  m_Name: pb_Mesh4768
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -3269,7 +3269,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh12180
+  m_Name: pb_Mesh4820
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -4942,7 +4942,7 @@ GameObject:
   - component: {fileID: 1416806053}
   - component: {fileID: 1416806059}
   m_Layer: 0
-  m_Name: Egg White
+  m_Name: Egg Whites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6585,7 +6585,7 @@ MonoBehaviour:
   reticle: {fileID: 1495829862}
   defaultReticle: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   handReticle: {fileID: 21300000, guid: 9866a92691696b346901281f2b329034, type: 3}
-  name: Egg White
+  name: Egg Whites
   ingredient: 1
 --- !u!1 &1417872077 stripped
 GameObject:
@@ -6646,7 +6646,7 @@ MonoBehaviour:
   reticle: {fileID: 1495829862}
   defaultReticle: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   handReticle: {fileID: 21300000, guid: 5485e2f56028a3c4cb54f5caa167377e, type: 3}
-  name: Whisky
+  name: Whiskey
   ingredient: 1
 --- !u!65 &1422382624
 BoxCollider:
@@ -6992,7 +6992,7 @@ MonoBehaviour:
   reticle: {fileID: 1495829862}
   defaultReticle: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   handReticle: {fileID: 21300000, guid: 9866a92691696b346901281f2b329034, type: 3}
-  name: Highball Glass
+  name: Old-Fashioned Glass
   ingredient: 0
 --- !u!65 &1524463740
 BoxCollider:
