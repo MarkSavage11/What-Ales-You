@@ -1,36 +1,14 @@
 fileFormatVersion: 2
-guid: 1bcb13fb86f28cb40b6329287e88790f
+guid: 8550cdcf2f12de1489276d892853ec8f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Caps
-    100002: Cylinder
-    100004: Frame
-    100006: Glass
-    100008: //RootNode
-    400000: Caps
-    400002: Cylinder
-    400004: Frame
-    400006: Glass
-    400008: //RootNode
-    2100000: Metal
-    2100002: Glass
-    2300000: Caps
-    2300002: Cylinder
-    2300004: Frame
-    2300006: Glass
-    3300000: Caps
-    3300002: Cylinder
-    3300004: Frame
-    3300006: Glass
+    100000: //RootNode
+    400000: //RootNode
+    2100000: No Name
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: Cylinder
-    4300002: Caps
-    4300004: Glass
-    4300006: Frame
-    6400000: Caps
-    6400002: Cylinder
-    6400004: Frame
-    6400006: Glass
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -64,7 +42,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
