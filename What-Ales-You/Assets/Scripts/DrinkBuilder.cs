@@ -76,5 +76,6 @@ public class DrinkBuilder : Interactable {
                 Debug.Log("You successfully stir the air.");
             }
         }
+        ingredients.Clear();
     }
 }
