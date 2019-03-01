@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: 25cede1ee76280f48a51d288e16bc921
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Ankle IK.L
+    100002: Ankle IK.L_end
+    100004: Ankle IK.R
+    100006: Ankle IK.R_end
+    100008: Arm Lower.L
+    100010: Arm Lower.R.001
+    100012: Arm Upper.L
+    100014: Arm Upper.R
+    100016: Body
+    100018: Body Rig
+    100020: Clothes
+    100022: //RootNode
+    100024: Elbow Pole Target.L
+    100026: Elbow Pole Target.L_end
+    100028: Elbow Pole Target.R
+    100030: Elbow Pole Target.R_end
+    100032: Eye Target
+    100034: Eye Target_end
+    100036: Eye.L
+    100038: Eye.L_end
+    100040: Eye.R
+    100042: Eye.R_end
+    100044: Eyes
+    100046: Foot.L
+    100048: Foot.R
+    100050: Hair
+    100052: Hand.L
+    100054: Hand.R
+    100056: Hips
+    100058: Knee Pole Target.L
+    100060: Knee Pole Target.L_end
+    100062: Knee Pole Target.R
+    100064: Knee Pole Target.R_end
+    100066: Leg Lower.L
+    100068: Leg Lower.R
+    100070: Leg Upper.L
+    100072: Leg Upper.R
+    100074: LowerSpine
+    100076: Middle 1.L
+    100078: Middle 1.R
+    100080: Middle 2.L
+    100082: Middle 2.R
+    100084: Middle 3.L
+    100086: Middle 3.L_end
+    100088: Middle 3.R
+    100090: Middle 3.R_end
+    100092: Neck
+    100094: Pinkie 1.L
+    100096: Pinkie 1.R
+    100098: Pinkie 2.L
+    100100: Pinkie 2.R
+    100102: Pinkie 3.L
+    100104: Pinkie 3.L_end
+    100106: Pinkie 3.R
+    100108: Pinkie 3.R_end
+    100110: Pointer 1.L
+    100112: Pointer 1.R
+    100114: Pointer 2.L
+    100116: Pointer 2.R
+    100118: Pointer 3.L
+    100120: Pointer 3.L_end
+    100122: Pointer 3.R
+    100124: Pointer 3.R_end
+    100126: Ring 1.L
+    100128: Ring 1.R
+    100130: Ring 2.L
+    100132: Ring 2.R
+    100134: Ring 3.L
+    100136: Ring 3.L_end
+    100138: Ring 3.R
+    100140: Ring 3.R_end
+    100142: Shoulder.L
+    100144: Shoulder.R
+    100146: Thumb 1.L
+    100148: Thumb 1.R
+    100150: Thumb 2.L
+    100152: Thumb 2.L_end
+    100154: Thumb 2.R
+    100156: Thumb 2.R_end
+    100158: Toes.L
+    100160: Toes.L_end
+    100162: Toes.R
+    100164: Toes.R_end
+    100166: UpperSpine
+    100168: Wrist IK.L
+    100170: Wrist IK.L_end
+    100172: Wrist IK.R
+    100174: Wrist IK.R_end
+    400000: Ankle IK.L
+    400002: Ankle IK.L_end
+    400004: Ankle IK.R
+    400006: Ankle IK.R_end
+    400008: Arm Lower.L
+    400010: Arm Lower.R.001
+    400012: Arm Upper.L
+    400014: Arm Upper.R
+    400016: Body
+    400018: Body Rig
+    400020: Clothes
+    400022: //RootNode
+    400024: Elbow Pole Target.L
+    400026: Elbow Pole Target.L_end
+    400028: Elbow Pole Target.R
+    400030: Elbow Pole Target.R_end
+    400032: Eye Target
+    400034: Eye Target_end
+    400036: Eye.L
+    400038: Eye.L_end
+    400040: Eye.R
+    400042: Eye.R_end
+    400044: Eyes
+    400046: Foot.L
+    400048: Foot.R
+    400050: Hair
+    400052: Hand.L
+    400054: Hand.R
+    400056: Hips
+    400058: Knee Pole Target.L
+    400060: Knee Pole Target.L_end
+    400062: Knee Pole Target.R
+    400064: Knee Pole Target.R_end
+    400066: Leg Lower.L
+    400068: Leg Lower.R
+    400070: Leg Upper.L
+    400072: Leg Upper.R
+    400074: LowerSpine
+    400076: Middle 1.L
+    400078: Middle 1.R
+    400080: Middle 2.L
+    400082: Middle 2.R
+    400084: Middle 3.L
+    400086: Middle 3.L_end
+    400088: Middle 3.R
+    400090: Middle 3.R_end
+    400092: Neck
+    400094: Pinkie 1.L
+    400096: Pinkie 1.R
+    400098: Pinkie 2.L
+    400100: Pinkie 2.R
+    400102: Pinkie 3.L
+    400104: Pinkie 3.L_end
+    400106: Pinkie 3.R
+    400108: Pinkie 3.R_end
+    400110: Pointer 1.L
+    400112: Pointer 1.R
+    400114: Pointer 2.L
+    400116: Pointer 2.R
+    400118: Pointer 3.L
+    400120: Pointer 3.L_end
+    400122: Pointer 3.R
+    400124: Pointer 3.R_end
+    400126: Ring 1.L
+    400128: Ring 1.R
+    400130: Ring 2.L
+    400132: Ring 2.R
+    400134: Ring 3.L
+    400136: Ring 3.L_end
+    400138: Ring 3.R
+    400140: Ring 3.R_end
+    400142: Shoulder.L
+    400144: Shoulder.R
+    400146: Thumb 1.L
+    400148: Thumb 1.R
+    400150: Thumb 2.L
+    400152: Thumb 2.L_end
+    400154: Thumb 2.R
+    400156: Thumb 2.R_end
+    400158: Toes.L
+    400160: Toes.L_end
+    400162: Toes.R
+    400164: Toes.R_end
+    400166: UpperSpine
+    400168: Wrist IK.L
+    400170: Wrist IK.L_end
+    400172: Wrist IK.R
+    400174: Wrist IK.R_end
+    2100000: Clothes Composite
+    2100002: Eye Composite
+    2100004: Skin Composite
+    2100006: Hair.001
+    4300000: Clothes
+    4300002: Eyes
+    4300004: Body
+    4300006: Hair
+    7400000: Body Rig|Body RigAction
+    9500000: //RootNode
+    13700000: Body
+    13700002: Clothes
+    13700004: Eyes
+    13700006: Hair
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Clothes Composite
+    second: {fileID: 2100000, guid: f158f57ebeb49454f9cdc6c94ba50a78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eye Composite
+    second: {fileID: 2100000, guid: e9da8e3482f15604ba5c8b0bc04eb0f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hair.001
+    second: {fileID: 2100000, guid: 6cc7d5815c8e2c84481e0fe2cfe1aad7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin Composite
+    second: {fileID: 2100000, guid: be33d97774ddeda40915779acadb65df, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Body Rig|Body RigAction
+      takeName: Body Rig|Body RigAction
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

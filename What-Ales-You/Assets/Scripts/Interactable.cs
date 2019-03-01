@@ -8,19 +8,25 @@ public class Interactable : MonoBehaviour
 
     public Text hoverText;
     public Image reticle;
-    public Sprite defaultReticle;
-    public Sprite handReticle;
-    public new string name;
+    public Sprite interactReticle;
+    public string iName;
 
     public void OnMouseEnter()
     {
-        reticle.sprite = handReticle;
-        hoverText.text = "| " + this.GetComponent<Interactable>().name;
+        //If this object has a specified interact reticle, it uses that, otherwise uses the default.
+        if(interactReticle != null)
+        {
+            reticle.sprite = interactReticle;
+        }else
+        {
+            reticle.sprite = reticle.GetComponent<Reticle>().grabReticle;
+        }
+        hoverText.text = "| " + iName;
     }
 
     public void OnMouseExit()
     {
-        reticle.sprite = defaultReticle;
+        reticle.sprite = reticle.GetComponent<Reticle>().defaultReticle;
         hoverText.text = "";
     }
 }

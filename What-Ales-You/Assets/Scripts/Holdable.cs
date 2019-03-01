@@ -52,7 +52,7 @@ public class Holdable : Interactable
             if (!this.ingredient)
             {
                 this.transform.parent = null;
-                this.transform.SetPositionAndRotation(mat.transform.position, mat.transform.rotation);
+                this.transform.SetPositionAndRotation(mat.glassLocation.position, mat.glassLocation.rotation);
             }
            
         }
