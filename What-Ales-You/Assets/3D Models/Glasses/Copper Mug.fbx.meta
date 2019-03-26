@@ -1,20 +1,15 @@
 fileFormatVersion: 2
-guid: 04726130d28cb964f91941ea9e2a2d6c
+guid: 1dfa12bfc4bf2804384b8adfd9899a9d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: No Name
+    2100000: Copper
     2300000: //RootNode
     3300000: //RootNode
-    4300000: BezierCurve
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: d30ef37a833205d488456fc1b83189bc, type: 2}
+    4300000: Cylinder
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0

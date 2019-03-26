@@ -1,20 +1,27 @@
 fileFormatVersion: 2
-guid: 04726130d28cb964f91941ea9e2a2d6c
+guid: b7e96b9ddd7a4424b9fcb1ebede26e3d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Cube
+    100004: Cube1
+    100006: pDisc1
+    100008: transform1
+    100010: transform2
     400000: //RootNode
-    2100000: No Name
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: BezierCurve
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: d30ef37a833205d488456fc1b83189bc, type: 2}
+    400002: Cube
+    400004: Cube1
+    400006: pDisc1
+    400008: transform1
+    400010: transform2
+    2100000: Material1
+    2100002: lambert1
+    2300000: Cube1
+    3300000: Cube1
+    4300000: Cube1
+    6400000: Cube1
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -47,7 +54,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

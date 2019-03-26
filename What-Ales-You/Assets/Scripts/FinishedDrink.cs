@@ -9,6 +9,7 @@ public class FinishedDrink : MonoBehaviour
     //Percentage of accuracy to the closest drink
     public float accuracy;
 
+
     public void Init(Drink closestDrink, float accuracy)
     {
         this.closestDrink = closestDrink;

@@ -31,7 +31,7 @@ public class DialogueUIHandler : Yarn.Unity.DialogueUIBehaviour
     public List<Button> optionButtons;
 
     /// Animator for the UI elements
-    //public Animator uiAnim;
+    public Animator uiAnim;
 
     void Awake(){
         // Start by hiding the container, line and option buttons
@@ -122,6 +122,7 @@ public class DialogueUIHandler : Yarn.Unity.DialogueUIBehaviour
             optionButtons[i].GetComponentInChildren<Text>().text = optionString;
             i++;
         }
+        uiAnim.SetInteger("OptionsNum", i);
 
         // Record that we're using it
         SetSelectedOption = optionChooser;

@@ -9,6 +9,8 @@ public class DrinkBuilder : Interactable {
     public List<string> ingredients;
     public Animator playerAnim;
 
+    public GameObject particlePrefab;
+
     public void Start() {
         ingredients = new List<string>();
     }
@@ -52,7 +54,8 @@ public class DrinkBuilder : Interactable {
             glass.GetComponent<Holdable>().iName = closestDrink;
             this.glass = null;
             this.ingredients.Clear();
+            GameObject particle = Instantiate(particlePrefab, glassLocation);
+            Destroy(particle);
         }
-        ingredients.Clear();
     }
 }
