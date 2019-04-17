@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5716039284413132668}
   - component: {fileID: 1557509604734383052}
   - component: {fileID: 1184333213238948150}
+  - component: {fileID: 7877858271953469162}
   m_Layer: 0
   m_Name: Tankard
   m_TagString: Untagged
@@ -63,6 +64,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.22032905, y: 0.20002085, z: 0.16938388}
   m_Center: {x: -0.022635698, y: 0.07705262, z: -0.0010153651}
+--- !u!114 &7877858271953469162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5488921217955965992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699582420c90c954c8a42c552b179837, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredients: []
 --- !u!1001 &6473645723507947908
 PrefabInstance:
   m_ObjectHideFlags: 0

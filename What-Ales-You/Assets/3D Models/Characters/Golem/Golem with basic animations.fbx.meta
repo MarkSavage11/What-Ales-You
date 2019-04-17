@@ -1,0 +1,261 @@
+fileFormatVersion: 2
+guid: 13cabf4ea971ec6439fda5533e2bacea
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Abs
+    100002: Arm Lower.L
+    100004: Arm Lower.R.001
+    100006: Arm Upper.L
+    100008: Arm Upper.R.001
+    100010: Armature
+    100012: Chest
+    100014: Elbow Pole Target.L
+    100016: Elbow Pole Target.L_end
+    100018: Elbow Pole Target.R.001
+    100020: Elbow Pole Target.R.001_end
+    100022: Foot IK.L
+    100024: Foot IK.L_end
+    100026: Foot IK.R.001
+    100028: Foot IK.R.001_end
+    100030: Foot.L
+    100032: Foot.L_end
+    100034: Foot.R.001
+    100036: Foot.R.001_end
+    100038: Golem Friend
+    100040: //RootNode
+    100042: Hand.L
+    100044: Hand.R.001
+    100046: Head
+    100048: Head_end
+    100050: Knee Pole Target.L
+    100052: Knee Pole Target.L_end
+    100054: Knee Pole Target.R.001
+    100056: Knee Pole Target.R.001_end
+    100058: Leg Lower.L
+    100060: Leg Lower.R.001
+    100062: Leg Upper.L
+    100064: Leg Upper.R.001
+    100066: Middle 1.L
+    100068: Middle 1.R.001
+    100070: Middle 2.L
+    100072: Middle 2.R.001
+    100074: Middle 3.L
+    100076: Middle 3.L_end
+    100078: Middle 3.R.001
+    100080: Middle 3.R.001_end
+    100082: Neck
+    100084: Pinkie 1.L
+    100086: Pinkie 1.R.001
+    100088: Pinkie 2.L
+    100090: Pinkie 2.R.001
+    100092: Pinkie 3.L
+    100094: Pinkie 3.L_end
+    100096: Pinkie 3.R.001
+    100098: Pinkie 3.R.001_end
+    100100: Pointer 1.L
+    100102: Pointer 1.R.001
+    100104: Pointer 2.L
+    100106: Pointer 2.R.001
+    100108: Pointer 3.L
+    100110: Pointer 3.L_end
+    100112: Pointer 3.R.001
+    100114: Pointer 3.R.001_end
+    100116: Ring 1.L
+    100118: Ring 1.R.001
+    100120: Ring 2.L
+    100122: Ring 2.R.001
+    100124: Ring 3.L
+    100126: Ring 3.L_end
+    100128: Ring 3.R.001
+    100130: Ring 3.R.001_end
+    100132: Root
+    100134: Shoulder.L
+    100136: Shoulder.R.001
+    100138: Thumb 1.L
+    100140: Thumb 1.R.001
+    100142: Thumb 2.L
+    100144: Thumb 2.L_end
+    100146: Thumb 2.R.001
+    100148: Thumb 2.R.001_end
+    100150: Wrist IK.L
+    100152: Wrist IK.L_end
+    100154: Wrist IK.R.001
+    100156: Wrist IK.R.001_end
+    400000: Abs
+    400002: Arm Lower.L
+    400004: Arm Lower.R.001
+    400006: Arm Upper.L
+    400008: Arm Upper.R.001
+    400010: Armature
+    400012: Chest
+    400014: Elbow Pole Target.L
+    400016: Elbow Pole Target.L_end
+    400018: Elbow Pole Target.R.001
+    400020: Elbow Pole Target.R.001_end
+    400022: Foot IK.L
+    400024: Foot IK.L_end
+    400026: Foot IK.R.001
+    400028: Foot IK.R.001_end
+    400030: Foot.L
+    400032: Foot.L_end
+    400034: Foot.R.001
+    400036: Foot.R.001_end
+    400038: Golem Friend
+    400040: //RootNode
+    400042: Hand.L
+    400044: Hand.R.001
+    400046: Head
+    400048: Head_end
+    400050: Knee Pole Target.L
+    400052: Knee Pole Target.L_end
+    400054: Knee Pole Target.R.001
+    400056: Knee Pole Target.R.001_end
+    400058: Leg Lower.L
+    400060: Leg Lower.R.001
+    400062: Leg Upper.L
+    400064: Leg Upper.R.001
+    400066: Middle 1.L
+    400068: Middle 1.R.001
+    400070: Middle 2.L
+    400072: Middle 2.R.001
+    400074: Middle 3.L
+    400076: Middle 3.L_end
+    400078: Middle 3.R.001
+    400080: Middle 3.R.001_end
+    400082: Neck
+    400084: Pinkie 1.L
+    400086: Pinkie 1.R.001
+    400088: Pinkie 2.L
+    400090: Pinkie 2.R.001
+    400092: Pinkie 3.L
+    400094: Pinkie 3.L_end
+    400096: Pinkie 3.R.001
+    400098: Pinkie 3.R.001_end
+    400100: Pointer 1.L
+    400102: Pointer 1.R.001
+    400104: Pointer 2.L
+    400106: Pointer 2.R.001
+    400108: Pointer 3.L
+    400110: Pointer 3.L_end
+    400112: Pointer 3.R.001
+    400114: Pointer 3.R.001_end
+    400116: Ring 1.L
+    400118: Ring 1.R.001
+    400120: Ring 2.L
+    400122: Ring 2.R.001
+    400124: Ring 3.L
+    400126: Ring 3.L_end
+    400128: Ring 3.R.001
+    400130: Ring 3.R.001_end
+    400132: Root
+    400134: Shoulder.L
+    400136: Shoulder.R.001
+    400138: Thumb 1.L
+    400140: Thumb 1.R.001
+    400142: Thumb 2.L
+    400144: Thumb 2.L_end
+    400146: Thumb 2.R.001
+    400148: Thumb 2.R.001_end
+    400150: Wrist IK.L
+    400152: Wrist IK.L_end
+    400154: Wrist IK.R.001
+    400156: Wrist IK.R.001_end
+    2100000: Composite
+    4300000: Golem Friend
+    7400000: Armature|Drink
+    7400002: Armature|Idle
+    7400004: Armature|Walk
+    9500000: //RootNode
+    13700000: Golem Friend
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Composite
+    second: {fileID: 2100000, guid: c9c34bba79d967b4d8eaaf91e4ae9188, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

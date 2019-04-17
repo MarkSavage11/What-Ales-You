@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5a0a7d0cb391d3542b9dab5a54ee6ceb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - hoverText: {fileID: 389403166419334672, guid: 9a6346cbc923b494ca5035432d1efb27,
+      type: 3}
+  - reticle: {fileID: 5737805209006792313, guid: 3fd0bb64af8caca41a1e94a2105ea25e,
+      type: 3}
+  - defaultReticle: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  - handReticle: {fileID: 21300000, guid: 5485e2f56028a3c4cb54f5caa167377e, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fire
   - Interactable
+  - Bar Spoon
   layers:
   - Default
   - TransparentFX

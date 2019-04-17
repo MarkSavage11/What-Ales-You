@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3218163874922445871}
   - component: {fileID: 307669982768780795}
   - component: {fileID: 8899128380918995719}
+  - component: {fileID: 5662579774508366419}
   m_Layer: 0
   m_Name: Collins Glass
   m_TagString: Untagged
@@ -63,6 +64,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.07058866, y: 0.14388937, z: 0.07931584}
   m_Center: {x: 0, y: 0.06411347, z: 0.0006478131}
+--- !u!114 &5662579774508366419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9197273614178398506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699582420c90c954c8a42c552b179837, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredients: []
 --- !u!1001 &5829669193911242910
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using Yarn;
 
 public class Patron : MonoBehaviour
@@ -12,59 +13,59 @@ public class Patron : MonoBehaviour
     public OrderHandler orderHandler;
 
 
-    public Transform startMarker;
+    public Transform barMarker;
     public Transform endMarker;
 
     public Transform hand;
 
-    // Movement speed in units/sec.
-    public float speed = 1.0F;
-
-    // Time when the movement started.
-    private float startTime;
-
-    // Total distance between the markers.
-    private float journeyLength;
-
+    public Animator anim;
+    private NavMeshAgent thisAgent;
     private bool hasOrdered = false;
+    private bool hasThankedYou = false;
 
-    void Start()
+    public void Start()
     {
-        // Keep a note of the time the movement started.
-        startTime = Time.time;
+        //this.anim = GetComponentInChildren<Animator>();
+        thisAgent = GetComponent<NavMeshAgent>();
+        GoToBar();
+    }
 
-        // Calculate the journey length.
-        journeyLength = Vector3.Distance(startMarker.position, endMarker.position);
+    public void Update()
+    {
+        if(!hasThankedYou && hasOrdered && !FindObjectOfType<Yarn.Unity.DialogueRunner>().isDialogueRunning)
+        {
+            hasThankedYou = true;
+            LeaveBar(); 
+        }
+
+        //Animation
+        float speedPercent = thisAgent.velocity.magnitude / thisAgent.speed;
+        anim.SetFloat("SpeedPercent", speedPercent);
+        //Debug.Log(speedPercent);
+    }
+
+    public void GoToBar()
+    {
+        thisAgent.SetDestination(barMarker.position);
     }
 
     [Yarn.Unity.YarnCommand("order")]
     public void OrderDrink(string[] drinkName)
     {
         string orderName = "";
-        foreach (string word in drinkName)
+        for (int i = 0; i < drinkName.Length; i++)
         {
-            orderName += word + " ";
+            orderName += drinkName[i];
+            if (i != drinkName.Length - 1) orderName += " ";
         }
         orderHandler.TakeOrder(characterName, orderName);
 
     }
 
-    public void Update()
-    {
-
-            // Distance moved = time * speed.
-            float distCovered = (Time.time - startTime) * speed;
-
-            // Fraction of journey completed = current distance divided by total distance.
-            float fracJourney = distCovered / journeyLength;
-
-            // Set our position as a fraction of the distance between the markers.
-            transform.position = Vector3.Lerp(startMarker.position, endMarker.position, fracJourney);
-
-    }
 
     private void OnTriggerEnter(Collider other)
     {
+        this.transform.rotation = Quaternion.Euler(0, 180, 0);
         if (!hasOrdered)
         {
             FindObjectOfType<Yarn.Unity.DialogueRunner>().StartDialogue(this.textNode);
@@ -78,12 +79,19 @@ public class Patron : MonoBehaviour
         orderHandler.FinishOrder(drink);
         this.hasOrdered = true;
 
-        FindObjectOfType<Yarn.Unity.DialogueRunner>().StartDialogue("OrderComplete"+this.characterName);
-        Transform newEndMarker = this.startMarker;
-        this.transform.Rotate(0, 180, 0);
-        this.startTime = Time.time;
-        this.startMarker = this.transform;
-        this.endMarker = newEndMarker;
+
+    }
+
+    public void LeaveBar()
+    {
+        FindObjectOfType<Yarn.Unity.DialogueRunner>().StartDialogue("OrderComplete" + this.characterName);
+        thisAgent.SetDestination(endMarker.position);
+
+    }
+
+    public bool HasFinished()
+    {
+        return hasThankedYou;
     }
 
 
