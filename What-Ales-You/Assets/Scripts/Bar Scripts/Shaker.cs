@@ -17,7 +17,7 @@ public class Shaker : Interactable
 
     public void Shake()
     {
-        //Debug.Log("Shaking");
+        
         shaken = true;
         this.gameObject.AddComponent(typeof(Holdable));
     }

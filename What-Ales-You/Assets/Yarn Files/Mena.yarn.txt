@@ -1,0 +1,30 @@
+title: Start
+tags: 
+colorID: 0
+position: 484,77
+---
+[[Hello|Hello]]
+===
+title: Hello
+tags: 
+colorID: 0
+position: 475,338
+---
+MENA: Hi. I was wondering, what's a Dark and Stormy?
+    [[Rum and ginger beer.|Rum_and_ginger_beer]]
+    [[It’s bubbly and kind of sweet.|Its_bubbly_and_kind_of_sweet]]
+===
+title: Rum_and_ginger_beer
+tags: 
+colorID: 0
+position: 764,365
+---
+Mena: RUM AND GINGER BEER SOUNDS DELICIOUS
+===
+title: Its_bubbly_and_kind_of_sweet
+tags: 
+colorID: 0
+position: 237,367
+---
+Mena: I LOVE BUBBLY AND SWEET THINGS
+===

@@ -16,7 +16,12 @@ ModelImporter:
     3300002: Glass
     4300000: Drink
     4300002: Glass
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 531c42ed3dcb39a4fa6818065e9be869, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

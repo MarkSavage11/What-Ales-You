@@ -7,9 +7,25 @@ public class ShakerTop : Interactable
 
     [SerializeField]
     private Shaker shaker;
+    private Vector3 startPosition;
+
+    public void Start()
+    {
+        startPosition = this.transform.position;
+    }
 
     public void Finish()
     {
-        StartCoroutine(FindObjectOfType<PickupManager>().Shake(shaker, this.transform));
+        if(shaker.ingredients.Count > 0)
+            StartCoroutine(FindObjectOfType<PickupManager>().Shake(shaker, this));
     }
+
+    public void GoHome()
+    {
+        this.transform.parent = null;
+        this.transform.position = startPosition;
+        this.transform.rotation = Quaternion.identity;
+    }
+
+
 }

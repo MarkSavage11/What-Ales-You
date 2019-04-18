@@ -1,0 +1,199 @@
+[
+	{
+		"title": "Dwarf Day 1 Start",
+		"tags": "",
+		"body": "\r\n[[Hello|Hello]]",
+		"position": {
+			"x": 540,
+			"y": 260
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Hello",
+		"tags": "",
+		"body": "MENA: Hi. I was wondering, what's a Dark and Stormy?\r\n[[Rum and ginger beer.|Rum_and_ginger_beer.]]\r\n[[It’s bubbly and kind of sweet.|Its_bubbly_and_kind_of_sweet.]]",
+		"position": {
+			"x": 523,
+			"y": 515
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Rum_and_ginger_beer.",
+		"tags": "",
+		"body": "MENA: What’s stormy about it?\r\n[[People say it looks like storm clouds.|People_say_it_looks_like_storm_clouds.]]\r\n[[I don’t know. I think some sailors came up with the name for it|Sailors]]",
+		"position": {
+			"x": 375,
+			"y": 809
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Its_bubbly_and_kind_of_sweet.",
+		"tags": "",
+		"body": "MENA: What’s stormy about it?\r\n[[People say it looks like storm clouds.|People_say_it_looks_like_storm_clouds.]]\r\n[[I don’t know. I think some sailors came up with the name for it|Sailors]]",
+		"position": {
+			"x": 698,
+			"y": 818
+		},
+		"colorID": 0
+	},
+	{
+		"title": "People_say_it_looks_like_storm_clouds.",
+		"tags": "",
+		"body": "MENA: Well, that’s what I’ll have.\r\n[[Coming right up.|Coming_right_up.]]",
+		"position": {
+			"x": 380,
+			"y": 1108
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Sailors",
+		"tags": "",
+		"body": "MENA: Well, that’s what I’ll have.\r\n[[Coming right up.|Coming_right_up.]]",
+		"position": {
+			"x": 686,
+			"y": 1100
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Coming_right_up.",
+		"tags": "",
+		"body": "<<order Mena Dark and Stormy>>\r\nMENA: You’re good at explaining things.\r\n[[Thanks.|Thanks.]]\r\n[[Not really.|Not_really.]]\r\n[[That was good?|That_was_good]]",
+		"position": {
+			"x": 530,
+			"y": 1402
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Thanks.",
+		"tags": "",
+		"body": "MENA: I’m awful at telling people things. \r\n[[I’m sure you’re not.|Im_sure_youre_not.]]\r\n[[What are you trying to tell them about?|WhatExplaination]]\r\n[[That sucks.|That_sucks.]]\r\n",
+		"position": {
+			"x": 249,
+			"y": 1670
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Not_really.",
+		"tags": "",
+		"body": "MENA: I’m awful at telling people things. \r\n[[I’m sure you’re not.|Im_sure_youre_not.]]\r\n[[What are you trying to tell them about?|WhatExplaination]]\r\n[[That sucks.|That_sucks.]]\r\n",
+		"position": {
+			"x": 541,
+			"y": 1671
+		},
+		"colorID": 0
+	},
+	{
+		"title": "That_was_good",
+		"tags": "",
+		"body": "MENA: I’m awful at telling people things. \r\n[[I’m sure you’re not.|Im_sure_youre_not.]]\r\n[[What are you trying to tell them about?|WhatExplaination]]\r\n[[That sucks.|That_sucks.]]\r\n",
+		"position": {
+			"x": 821,
+			"y": 1667
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Im_sure_youre_not.",
+		"tags": "",
+		"body": "MENA: How could you know?\r\n[[OfferAdvice]]",
+		"position": {
+			"x": 247,
+			"y": 1994
+		},
+		"colorID": 0
+	},
+	{
+		"title": "OfferAdvice",
+		"tags": "",
+		"body": "[[What are you trying to tell them about?|WhatExplaination]]\r\n[[If you just keep talking, eventually people will get it.|WhatExplaination]]",
+		"position": {
+			"x": 247,
+			"y": 1994
+		},
+		"colorID": 0
+	},
+
+	{
+		"title": "That_sucks.",
+		"tags": "",
+		"body": "MENA: Yeah...\r\n[[OfferAdvice]]",
+		"position": {
+			"x": 799,
+			"y": 1997
+		},
+		"colorID": 0
+	},
+
+	{
+		"title": "WhatExplaination",
+		"tags": "",
+		"body": " I guess it makes sense why nobody would be interested…\r\n[[I am.|Interested]]\r\n[[Have you actually tried pitching to anyone?|TryPitch]]\r\n[[Uh Huh|UhHuh]]",
+		"position": {
+			"x": 516,
+			"y": 2383
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Interested",
+		"tags": "",
+		"body": "oh. Well...it's...uh...this thing that....knows about the rain and uh...tells you about it.[[ShouldGiveUp]]",
+	},
+	{
+		"title": "TryPitch",
+		"tags": "",
+		"body": "People always stop listening...[[ShouldGiveUp]]",
+	},
+	{
+		"title": "UhHuh",
+		"tags": "",
+		"body": "Thats kind of what I figured.[[ShouldGiveUp]]",
+	},
+	{
+		"title": "ShouldGiveUp",
+		"tags": "",
+		"body": "I should probably just give it up.\r\n[[That's an option|IsOption]]\r\n[[Why?|Why]]",
+	},
+	{
+		"title": "IsOption",
+		"tags": "",
+		"body": "Probably the best one\r\n[[People might care if you force them to listen|ForceThem]][[Yep|Dejected]]",
+	},
+	{
+		"title": "Why",
+		"tags": "",
+		"body": "It's not worth it if nobody cares.\r\n[[That's fair.|Dejected]]",
+	},
+	{
+		"title": "ForceThem",
+		"tags": "",
+		"body": "You think?\r\n[[Yeah.|Hopeful]]\r\n[[Maybe.|Hopeful]]",
+	},
+	{
+		"title": "Dejected",
+		"tags": "",
+		"body": "...",
+	},
+	{
+		"title": "Hopeful",
+		"tags": "",
+		"body": "Maybe I'll try that.",
+	},
+	{
+		"title": "OrderCompleteMena",
+		"tags": "",
+		"body": "Thanks so much! I'll definitely come back soon",
+		"position": {
+			"x": 516,
+			"y": 2383
+		},
+		"colorID": 0
+	}
+]

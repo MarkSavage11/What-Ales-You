@@ -152,12 +152,13 @@ public class PickupManager : MonoBehaviour
         Vector3 startHandPos = holdLoc.position;
 
         holdLoc.SetPositionAndRotation(target.position + pourOffset, Quaternion.identity);
+        //holdLoc.GetComponent<Hand>().Interact(target.position + pourOffset);
         //holdLoc.localPosition = target.position + pourOffset;
        
         anim.SetTrigger("Pour");
         yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
 
-
+        //holdLoc.GetComponent<Hand>().StopInteract();
         holdLoc.SetPositionAndRotation(startHandPos, Quaternion.identity);
         FindObjectOfType<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().isFocused = false;
     }
@@ -173,6 +174,8 @@ public class PickupManager : MonoBehaviour
 
         holdLoc.SetPositionAndRotation(startHandPos, Quaternion.identity);
         FindObjectOfType<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().isFocused = false;
+        ParticleSystem ps = Instantiate(ParticleManager.instance.poofPrefab, target.position + new Vector3(0f, .1f, 0f), Quaternion.identity) as ParticleSystem;
+        Destroy(ps.gameObject, ps.main.duration);
     }
 
     public IEnumerator Stir(Transform target)
@@ -189,17 +192,22 @@ public class PickupManager : MonoBehaviour
         held.transform.rotation = startSpoonRotation;
         holdLoc.SetPositionAndRotation(startHandPos, Quaternion.identity);
         FindObjectOfType<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().isFocused = false;
+        ParticleSystem ps = Instantiate(ParticleManager.instance.poofPrefab, target.position + new Vector3(0f, .1f, 0f), Quaternion.identity) as ParticleSystem;
+        Destroy(ps.gameObject, ps.main.duration);
 
     }
 
-    public IEnumerator Shake(Shaker shaker, Transform shakerTop)
+    public IEnumerator Shake(Shaker shaker, ShakerTop shakerTop)
     {
+        shakerTop.transform.parent = shaker.transform;
+        shakerTop.transform.position = shaker.transform.position + new Vector3(0f, .1f, 0f);
         shaker.Shake();
         isHolding = true;
         shaker.GetComponent<Holdable>().MoveToHand(holdLoc);
         this.held = shaker.GetComponent<Holdable>();
         anim.SetTrigger("Shake");
         yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
+        shakerTop.GoHome();
     }
 
 

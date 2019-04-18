@@ -61,6 +61,7 @@ public class DrinkContainer : MonoBehaviour
             this.gameObject.AddComponent(typeof(FinishedDrink));
             if (closestMatch > .3f)
             {
+                
                 this.GetComponent<FinishedDrink>().Init(Recipes.recipes[closestDrink], (float)Mathf.Round((closestMatch * 100)));
                 this.GetComponent<Holdable>().iName = closestDrink;
             }else
@@ -70,8 +71,7 @@ public class DrinkContainer : MonoBehaviour
             }
             Destroy(GetComponent<DrinkContainer>());
 
-            //GameObject particle = Instantiate(particlePrefab, this.transform);
-
+            
         }
     }
 
