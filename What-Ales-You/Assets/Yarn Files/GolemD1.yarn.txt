@@ -1,0 +1,259 @@
+title: Golem Start D1
+tags: 
+colorID: 0
+position: 546,276
+---
+Hello!
+
+[[Uh... hi?]]
+[[Can I help you?]]
+[[Hello]]
+===
+title: Uh... hi?
+tags: 
+colorID: 0
+position: 313,522
+---
+Oh... um, did I scare you? 
+
+[[No, not at all]]
+[[You're just very... tall|Tall]]
+===
+title: Can I help you?
+tags: 
+colorID: 0
+position: 552,931
+---
+Yes! You sell drinks here?
+
+[[That's my whole thing|What is good]]
+[[What can I get you?|What is good]]
+===
+title: Hello
+tags: 
+colorID: 0
+position: 882,554
+---
+Greetings!
+
+[[Hi?]]
+[[Can I help you?]]
+===
+title: No, not at all
+tags: 
+colorID: 0
+position: -91,782
+---
+That is good. Would it be possible for me to get a drink? 
+
+[[Of course.|What is good]]
+[[What do you want?|What is good]]
+===
+title: Hi?
+tags: 
+colorID: 0
+position: 901,839
+---
+Salutations!
+
+[[Can I help you?]]
+===
+title: Tall
+tags: 
+colorID: 0
+position: 272,815
+---
+That I am!
+
+[[What can I get you?|What is good]]
+===
+title: What is good
+tags: 
+colorID: 0
+position: 285,1495
+---
+What do you recommend? 
+
+[[Vodka cran]]
+[[Screwdriver]]
+[[Rum and coke]]
+===
+title: Vodka cran
+tags: 
+colorID: 0
+position: 296,1800
+---
+<<order Golem Vodka cran>>
+I will have a vodka cran!
+
+[[Coming right up]]
+===
+title: Screwdriver
+tags: 
+colorID: 0
+position: 663,1787
+---
+<<order Golem Screwdriver>>
+I will have one of these screwdrivers!
+
+[[Coming right up]]
+===
+title: Rum and Coke
+tags: 
+colorID: 0
+position: 1107,1776
+---
+<<order Golem Rum and Coke>>
+Whatever a rum and coke is, I will try it!
+
+[[Coming right up]]
+===
+title: Coming right up
+tags: 
+colorID: 0
+position: 646,2108
+---
+Thank you!
+
+[[I haven't seen you around here before|Not from around here]]
+[[Where are you from?]]
+[[Who are you?]]
+===
+title: Not from around here
+tags: 
+colorID: 0
+position: 178,2408
+---
+It is my first time here.
+
+[[Glad to have you]]
+[[What brings you in?]]
+[[Where are you from?]]
+===
+title: Where are you from?
+tags: 
+colorID: 0
+position: 640,2402
+---
+I am from very far away. I walked for a half of an hour to get here.
+
+[[What brings you in?]]
+[[A whole half hour, huh?]]
+===
+title: Who are you?
+tags: 
+colorID: 0
+position: 1240,2396
+---
+I do not have a name.
+
+[[You should probably fix that]]
+[[What brings you in?]]
+===
+title: What brings you in?
+tags: 
+colorID: 0
+position: 36,3551
+---
+I was all alone and did not want to be, so I traveled to a place where people gather.
+
+[[Are you okay?]]
+[[You're always welcome here|Goodbye]]
+===
+title: You should probably fix that
+tags: 
+colorID: 0
+position: 1376,2975
+---
+Potentially. I will think about it. 
+
+[[What brings you in?]]
+[[Where are you from?]]
+===
+title: A whole half hour, huh?
+tags: 
+colorID: 0
+position: 1301,3260
+---
+Yes. It was quite a journey. I can barely see the tower anymore. 
+
+[[Tower?]]
+[[You don't get out much, do you?]]
+===
+title: Glad to have you
+tags: 
+colorID: 0
+position: 52,2728
+---
+Thank you! I am very happy to be here.
+
+[[So what's your name?]]
+===
+title: So what's your name?
+tags: 
+colorID: 0
+position: 55,3001
+---
+I do not have one.
+
+[[You should probably fix that]]
+[[What brings you in?]]
+[[Where are you from?]]
+===
+title: Tower?
+tags: 
+colorID: 0
+position: 1064,3524
+---
+I lived there with the wizard who created me, but he is dead now.
+
+[[I'm so sorry]]
+[[Are you okay?]]
+===
+title: You don't get out much, do you?
+tags: 
+colorID: 0
+position: 1994,3597
+---
+I do not. This is the first time that I have been away from the tower.
+
+[[Tell me about the tower|Tower?]]
+[[Well I'm glad that you're here|Goodbye]]
+===
+title: Are you okay?
+tags: 
+colorID: 0
+position: 788,3825
+---
+Yes. I am very sad, but it will get better.
+
+[[Do you need anything?]]
+[[Well, I hope the drink helps|Goodbye]]
+===
+title: I'm so sorry
+tags: 
+colorID: 0
+position: 1482,3862
+---
+It is not your fault. He was happy, and that is what matters. 
+
+[[Stay as long as you want|Goodbye]]
+[[Do you need anything?]]
+===
+title: Do you need anything?
+tags: 
+colorID: 0
+position: 1161,3954
+---
+No, I do not think so. Being here makes me feel better. 
+
+[[Let me know if you need a friend|Goodbye]]
+[[Well, enjoy your drink at least|Goodbye]]
+===
+title: Goodbye
+tags: 
+colorID: 0
+position: 1219,4420
+---
+Thank you!
+===
