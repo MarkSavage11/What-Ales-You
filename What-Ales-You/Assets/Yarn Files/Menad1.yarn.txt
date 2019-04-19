@@ -1,36 +1,36 @@
-title: Mena Start D1
+title: MenaStartD1
 tags: 
 colorID: 0
 position: 577,138
 ---
 Excuse me? Hello?
 
-[[Welcome! What can I get for you?|What can I get for you]]
-[[Hey there. Can I make you a drink?|What can I get for you]]
+[[Welcome! What can I get for you?|WhatDrink]]
+[[Hey there. Can I make you a drink?|WhatDrink]]
 ===
-title: What can I get for you
+title: WhatDrink
 tags: 
 colorID: 0
 position: 575,457
 ---
 I don't know, I don't really recognize any of these drinks....
 
-[[They're not that weird]]
-[[They are a little weird]]
-[[What are you used to?]]
+[[They're not that weird|NotWeird]]
+[[They are a little weird|LittleWeird]]
+[[What are you used to?|Normal]]
 ===
-title: They're not that weird
+title: NotWeird
 tags: 
 colorID: 0
 position: 344,723
 ---
 I guess I've just... never seen them before. What's a Dark and Stormy? 
 
-[[Ginger beer, rum, and lemon juice|I will have that]]
-[[Sailors say it looks like storm clouds|I will have that]]
-[[It's mellow and kind of sweet|I will have that]]
+[[Ginger beer, rum, and lemon juice|HaveThat]]
+[[Sailors say it looks like storm clouds|HaveThat]]
+[[It's mellow and kind of sweet|HaveThat]]
 ===
-title: They are a little weird
+title: LittleWeird
 tags: 
 colorID: 0
 position: 588,719
@@ -40,15 +40,15 @@ How did you come up with them?
 [[They're normal where I'm from|Stories]]
 [[Creativity|Stories]]
 ===
-title: What are you used to?
+title: Normal
 tags: 
 colorID: 0
 position: 827,717
 ---
 You know, Elemental Tempers, Dragon Claws, Garglesnorf. Normal drinks.
 
-[[Which is your favorite?]]
-[[I've never heard of those]]
+[[Which is your favorite?|Favorite]]
+[[I've never heard of those|Unknown]]
 ===
 title: Stories
 tags: 
@@ -57,21 +57,21 @@ position: 588,1537
 ---
 Are there any stories behind them? 
 
-[[Some of them|Dark and Stormy]]
-[[Nothing interesting|Dark and Stormy]]
+[[Some of them|DarkAndStormy]]
+[[Nothing interesting|DarkAndStormy]]
 ===
-title: Dark and Stormy
+title: DarkAndStormy
 tags: 
 colorID: 0
 position: 589,1780
 ---
 Well, what's a dark and stormy?
 
-[[Ginger beer, rum, and lemon juice|I will have that]]
-[[Sailors say it looks like storm clouds|I will have that]]
-[[It's mellow and kind of sweet|I will have that]]
+[[Ginger beer, rum, and lemon juice|HaveThat]]
+[[Sailors say it looks like storm clouds|HaveThat]]
+[[It's mellow and kind of sweet|HaveThat]]
 ===
-title: I will have that
+title: HaveThat
 tags: 
 colorID: 0
 position: 591,2066
@@ -79,74 +79,74 @@ position: 591,2066
 I'll try that, then.
 <<order Mena Dark and Stormy>>
 ===
-title: Which is your favorite?
+title: Favorite
 tags: 
 colorID: 0
-position: 829,1001
+position: 828,1003
 ---
 I... uh... I guess I kind of like garglesnorf....
 
-[[Do you want that?]]
-[[What's that like?]]
+[[Do you want that?|WantThat]]
+[[What's that like?|WhatItLike]]
 ===
-title: Do you want that?
+title: WantThat
 tags: 
 colorID: 0
 position: 834,1264
 ---
 No, I think I should try something new.
 
-[[Try a dark and stormy|Dark and Stormy]]
+[[Try a dark and stormy|DarkAndStormy]]
 ===
-title: What's that like?
+title: WhatItLike
 tags: 
 colorID: 0
 position: 1091,1271
 ---
 It's, uh... kind of sweet and bubbly.
 
-[[Try a dark and stormy|Dark and Stormy]]
+[[Try a dark and stormy|DarkAndStormy]]
 ===
-title: I've never heard of those
+title: Unknown
 tags: 
 colorID: 0
-position: 1372,1016
+position: 1372,1015
 ---
 Really? I thought they were pretty common. 
 
-[[Not where I'm from]]
-[[I guess I'm the weird one, then]]
+[[Not where I'm from|NotWhereFrom]]
+[[I guess I'm the weird one, then|IWeirdOne]]
 ===
-title: Not where I'm from
+title: NotWhereFrom
 tags: 
 colorID: 0
 position: 1385,1260
 ---
 Oh....
 
-[[Want to try something new?]]
-[[How about I make you something I know?]]
+[[Want to try something new?|SomethingNew]]
+[[How about I make you something I know?|SomethingFamiliar]]
 ===
-title: I guess I'm the weird one, then
+title: IWeirdOne
 tags: 
 colorID: 0
 position: 1658,1253
 ---
 I mean... you're not THAT weird.
 
-[[Wanna bet?|Try something new]]
-[[Sometimes I wonder...|Try something new]]
+[[Wanna bet?|SomethingNew]]
+[[Sometimes I wonder...|FUCK]]
 ===
-title: Want to try something new?
+title: SomethingNew
 tags: 
 colorID: 0
 position: 1124,1530
 ---
 Okay. What should I have? 
 
-[[Try a dark and stormy|Dark and Stormy]]
+[[Try a dark and stormy|DarkAndStormy]]
 ===
-title: How about I make you something I know?
+title: SomethingFamiliar
 tags: 
 colorID: 0
 position: 1384,1525
@@ -154,24 +154,32 @@ position: 1384,1525
 Uhhh... sure. What are you making? 
 <<order Mena Dark and Stormy>>
 
-[[It's a surprise]]
-[[It's called a dark and stormy, I think you'll like it]]
+[[It's a surprise|OrderComplete]]
+[[It's called a dark and stormy, I think you'll like it|OrderComplete]]
 ===
-title: Try something new
+title: FUCK
 tags: 
 colorID: 0
-position: 1635,1522
+position: 1820,1509
 ---
 Maybe I should just try something new.
 
-[[What are you thinking?|I will have a dark and stormy]]
-[[Anything you want.|I will have a dark and stormy]]
+[[What are you thinking?|Iwillhaveadarkandstormy]]
+[[Anything you want.|Iwillhaveadarkandstormy]]
 ===
-title: I will have a dark and stormy
+title: Iwillhaveadarkandstormy
 tags: 
 colorID: 0
 position: 1640,1799
 ---
 I'll try a dark and stormy.
 <<order Mena Dark and Stormy>>
+===
+title: OrderCompleteMena
+tags: 
+colorID: 0
+position: 1252,2066
+---
+Thanks!
+
 ===

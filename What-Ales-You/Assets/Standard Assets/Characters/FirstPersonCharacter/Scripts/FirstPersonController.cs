@@ -121,7 +121,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (m_CharacterController.isGrounded)
             {
                 m_MoveDir.y = -m_StickToGroundForce;
-
+                /*
                 if (m_Jump)
                 {
                     m_MoveDir.y = m_JumpSpeed;
@@ -129,6 +129,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     m_Jump = false;
                     m_Jumping = true;
                 }
+                */
             }
             else
             {

@@ -109,9 +109,11 @@ public class PickupManager : MonoBehaviour
     //Shouldn't be called if isHolding = false;
     void UseHeld()
     {
+        
         RaycastHit hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range))
         {
+            
             FinishedDrink fd = this.held.GetComponent<FinishedDrink>();
             if (fd != null && orderHandler.currentOrder != null) 
             {
@@ -122,6 +124,7 @@ public class PickupManager : MonoBehaviour
                     this.isHolding = false;
                     return;
                 }
+                
             }
 
 
@@ -132,8 +135,10 @@ public class PickupManager : MonoBehaviour
             {
                 this.held.Interact(other);
                 return;
-            }   
+            }
         }
+       
+      
     }
 
 

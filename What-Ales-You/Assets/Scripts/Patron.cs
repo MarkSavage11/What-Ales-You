@@ -25,7 +25,6 @@ public class Patron : MonoBehaviour
 
     public void Start()
     {
-        //this.anim = GetComponentInChildren<Animator>();
         thisAgent = GetComponent<NavMeshAgent>();
         GoToBar();
     }
@@ -84,7 +83,12 @@ public class Patron : MonoBehaviour
 
     public void LeaveBar()
     {
-        FindObjectOfType<Yarn.Unity.DialogueRunner>().StartDialogue("OrderComplete" + this.characterName);
+        try { 
+            FindObjectOfType<Yarn.Unity.DialogueRunner>().StartDialogue("OrderComplete" + this.characterName);
+        }catch(System.Exception e)
+        {
+            Debug.Log("No Order Complete node for " + this.characterName);
+        }
         thisAgent.SetDestination(endMarker.position);
 
     }

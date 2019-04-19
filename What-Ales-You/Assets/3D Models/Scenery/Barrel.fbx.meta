@@ -17,7 +17,17 @@ ModelImporter:
     3300002: Cylinder.001
     4300000: Cylinder.001
     4300002: Cylinder
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: 3e5b03e03c8a8534394fcff1a88eb9bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: 3e0d930eb01f42c4ab4b1171211f3438, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

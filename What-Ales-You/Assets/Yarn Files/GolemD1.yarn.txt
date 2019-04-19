@@ -1,0 +1,259 @@
+title: GolemStartD1
+tags: 
+colorID: 0
+position: 546,274
+---
+Hello!
+
+[[Uh... hi?|UhHi]]
+[[CanI help you?|CanIHelpYou]]
+[[Hello|Hello]]
+===
+title: UhHi
+tags: 
+colorID: 0
+position: 278,515
+---
+Oh... um, did I scare you? 
+
+[[No, not at all|NotAtAll]]
+[[You're just very... tall|Tall]]
+===
+title: CanIHelpYou
+tags: 
+colorID: 0
+position: 552,931
+---
+Yes! You sell drinks here?
+
+[[That's my whole thing|WhatIsGood]]
+[[What can I get you?|WhatIsGood]]
+===
+title: Hello
+tags: 
+colorID: 0
+position: 882,552
+---
+Greetings!
+
+[[Hi?|Hi]]
+[[Can I help you?|CanIHelpYou]]
+===
+title: NotAtAll
+tags: 
+colorID: 0
+position: -91,782
+---
+That is good. Would it be possible for me to get a drink? 
+
+[[Of course.|WhatIsGood]]
+[[What do you want?|WhatIsGood]]
+===
+title: Hi
+tags: 
+colorID: 0
+position: 914,798
+---
+Salutations!
+
+[[Can I help you?|CanIHelpYou]]
+===
+title: Tall
+tags: 
+colorID: 0
+position: 272,815
+---
+That I am!
+
+[[What can I get you?|WhatIsGood]]
+===
+title: WhatIsGood
+tags: 
+colorID: 0
+position: 285,1495
+---
+What do you recommend? 
+
+[[Vodka cran|Vodka]]
+[[Screwdriver|Screwdriver]]
+[[Rum and coke|Rum]]
+===
+title: Vodka
+tags: 
+colorID: 0
+position: 296,1794
+---
+<<order Golem Vodka Cranberry>>
+I will have a vodka cran!
+
+[[Coming right up|ComingRightUp]]
+===
+title: Screwdriver
+tags: 
+colorID: 0
+position: 663,1787
+---
+<<order Golem Screwdriver>>
+I will have one of these screwdrivers!
+
+[[Coming right up|ComingRightUp]]
+===
+title: Rum
+tags: 
+colorID: 0
+position: 1108,1776
+---
+<<order Golem Rum & Coke>>
+Whatever a rum and coke is, I will try it!
+
+[[Coming right up|ComingRightUp]]
+===
+title: ComingRightUp
+tags: 
+colorID: 0
+position: 646,2108
+---
+Thank you!
+
+[[I haven't seen you around here before|New]]
+[[Where are you from?|Where]]
+[[Who are you?|Who]]
+===
+title: New
+tags: 
+colorID: 0
+position: 178,2408
+---
+It is my first time here.
+
+[[Glad to have you|GladToHaveYou]]
+[[What brings you in?|What]]
+[[Where are you from?|Where]]
+===
+title: Where
+tags: 
+colorID: 0
+position: 640,2402
+---
+I am from very far away. I walked for a half of an hour to get here.
+
+[[What brings you in?|What]]
+[[A whole half hour, huh?|HalfHour]]
+===
+title: Who
+tags: 
+colorID: 0
+position: 1240,2394
+---
+I do not have a name.
+
+[[You should probably fix that|Fix]]
+[[What brings you in?|What]]
+===
+title: What
+tags: 
+colorID: 0
+position: 36,3551
+---
+I was all alone and did not want to be, so I traveled to a place where people gather.
+
+[[Are you okay?|Okay]]
+[[You're always welcome here|OrderComplete]]
+===
+title: Fix
+tags: 
+colorID: 0
+position: 1376,2976
+---
+Potentially. I will think about it. 
+
+[[What brings you in?|What]]
+[[Where are you from?|Where]]
+===
+title: HalfHour
+tags: 
+colorID: 0
+position: 1301,3260
+---
+Yes. It was quite a journey. I can barely see the tower anymore. 
+
+[[Tower?|Tower]]
+[[You don't get out much, do you?|GetOut]]
+===
+title: GladToHaveYou
+tags: 
+colorID: 0
+position: 602,2728
+---
+Thank you! I am very happy to be here.
+
+[[So what's your name?|Name]]
+===
+title: Name
+tags: 
+colorID: 0
+position: 55,3001
+---
+I do not have one.
+
+[[You should probably fix that|Fix]]
+[[What brings you in?|What]]
+[[Where are you from?|Where]]
+===
+title: Tower
+tags: 
+colorID: 0
+position: 1064,3518
+---
+I lived there with the wizard who created me, but he is dead now.
+
+[[I'm so sorry|Sorry]]
+[[Are you okay?|Okay]]
+===
+title: GetOut
+tags: 
+colorID: 0
+position: 1994,3597
+---
+I do not. This is the first time that I have been away from the tower.
+
+[[Tell me about the tower|Tower]]
+[[Well I'm glad that you're here|OrderCompleteGolem]]
+===
+title: Okay
+tags: 
+colorID: 0
+position: 788,3823
+---
+Yes. I am very sad, but it will get better.
+
+[[Do you need anything?|NeedAnything]]
+[[Well, I hope the drink helps|OrderCompleteGolem]]
+===
+title: Sorry
+tags: 
+colorID: 0
+position: 1482,3862
+---
+It is not your fault. He was happy, and that is what matters. 
+
+[[Stay as long as you want|OrderCompleteGolem]]
+[[Do you need anything?|NeedAnything]]
+===
+title: NeedAnything
+tags: 
+colorID: 0
+position: 1161,3954
+---
+No, I do not think so. Being here makes me feel better. 
+
+[[Let me know if you need a friend|OrderCompleteGolem]]
+[[Well, enjoy your drink at least|OrderCompleteGolem]]
+===
+title: OrderCompleteGolem
+tags: 
+colorID: 0
+position: 1215,4420
+---
+Thank you!
+===

@@ -13,9 +13,11 @@ public class PatronRunner : MonoBehaviour
     public float averageDelay;
     public float delayVarience;
     public float endDelay;
+    public GameObject endScreen;
 
     private Queue<GameObject> patrons;
     private GameObject currentPatron;
+    private bool gettingNext = false;
 
     public void Awake()
     {
@@ -35,23 +37,11 @@ public class PatronRunner : MonoBehaviour
     {
         if (currentPatron != null)
         {
-            bool hasFinished = currentPatron.GetComponent<Patron>().HasFinished();
-            if (hasFinished)
+            currentPatron.GetComponent<Patron>().HasFinished();
+            if (currentPatron.GetComponent<Patron>().HasFinished() && !gettingNext)
             {
-                currentPatron.SetActive(false);
-                StartCoroutine(Wait(Random.Range(averageDelay - delayVarience, averageDelay + delayVarience)));
-                Debug.Log(patrons.Count);
-                if (patrons.Count > 0)
-                {
-                    currentPatron = patrons.Dequeue();
-                    currentPatron.transform.SetPositionAndRotation(spawn.position, Quaternion.identity);
-                    currentPatron.SetActive(true);
-                }
-                else
-                {
-                    currentPatron = null;
-                    EndDay();
-                }
+                StartCoroutine(NextPatron());
+                
             }
         }
 
@@ -60,7 +50,9 @@ public class PatronRunner : MonoBehaviour
     public IEnumerator EndDay()
     {
         yield return StartCoroutine(Wait(endDelay));
+        StopAllCoroutines();
         Debug.Log("End of Day");
+        endScreen.SetActive(true);
     }
 
     IEnumerator Wait(float time)
@@ -68,6 +60,28 @@ public class PatronRunner : MonoBehaviour
         yield return new WaitForSeconds(time);
     }
 
+    IEnumerator NextPatron()
+    {
+        gettingNext = true;
+        yield return new WaitForSeconds(5);
+              
+        Debug.Log(patrons.Count);
+        if (patrons.Count > 0)
+        {
+            
+            currentPatron.SetActive(false);
+            yield return new WaitForSeconds(Random.Range(averageDelay - delayVarience, averageDelay + delayVarience));
+            currentPatron = patrons.Dequeue();
+            currentPatron.transform.SetPositionAndRotation(spawn.position, Quaternion.identity);
+            currentPatron.SetActive(true);
+        }
+        else
+        {
+            currentPatron = null;
+            yield return EndDay();
+        }
+        gettingNext = false;
+    }
 
 
 }
