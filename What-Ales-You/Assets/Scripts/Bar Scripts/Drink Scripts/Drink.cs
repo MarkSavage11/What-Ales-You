@@ -6,16 +6,7 @@ using UnityEngine;
 public class Drink 
 {
     //Here if we want to make ingredients into enum, unused for right now
-    public enum Ingredient{
-        //Liquors:
-        Vodka, Tequila, Rum,
-        //Sodas:
-        Coke, GingerBeer,
-        //Juices:
-        LemonJuice, LimeJuice, CranberryJuice, OrangeJuice,
-        //Other:
-        EggWhite, SimpleSyrup
-    }
+
 
     public string drinkName;
     public List<string> ingredients;
