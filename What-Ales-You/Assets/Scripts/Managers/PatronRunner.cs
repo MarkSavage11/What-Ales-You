@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PatronRunner : MonoBehaviour
 {
@@ -53,6 +54,8 @@ public class PatronRunner : MonoBehaviour
         StopAllCoroutines();
         Debug.Log("End of Day");
         endScreen.SetActive(true);
+        yield return StartCoroutine(MainMenu());
+       
     }
 
     IEnumerator Wait(float time)
@@ -63,7 +66,7 @@ public class PatronRunner : MonoBehaviour
     IEnumerator NextPatron()
     {
         gettingNext = true;
-        yield return new WaitForSeconds(5);
+        //yield return new WaitForSeconds(5);
               
         Debug.Log(patrons.Count);
         if (patrons.Count > 0)
@@ -81,6 +84,12 @@ public class PatronRunner : MonoBehaviour
             yield return EndDay();
         }
         gettingNext = false;
+    }
+
+    private IEnumerator MainMenu()
+    {
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 
 

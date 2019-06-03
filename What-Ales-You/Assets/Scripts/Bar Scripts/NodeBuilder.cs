@@ -26,4 +26,19 @@ public class NodeBuilder : MonoBehaviour
             }
         }
     }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        for (int x = 0; x < xSize; x++)
+        {
+            for (int z = 0; z < zSize; z++)
+            {
+                Vector3 pos = this.transform.position + new Vector3(x, 0, z) * nodeSize;
+
+                Gizmos.DrawCube(pos, new Vector3(nodeSize, .01f, nodeSize));
+
+            }
+        }
+    }
 }

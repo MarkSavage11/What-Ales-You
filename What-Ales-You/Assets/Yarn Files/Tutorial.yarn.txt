@@ -1,0 +1,272 @@
+title: TutorialStart
+tags: 
+colorID: 0
+position: 550,286
+---
+Wow, this place looks great!
+
+[[Thanks|TutorialNode1]]
+[[Do I know you?|TutorialNode2]]
+===
+title: TutorialNode1
+tags: 
+colorID: 0
+position: 336,558
+---
+I love what you've done with it. 
+
+[[Uh... thanks|TutorialNode5]]
+[[Do I know you?|TutorialNode2]]
+===
+title: TutorialNode2
+tags: 
+colorID: 0
+position: 657,554
+---
+Sorry, probably not. I'm Tori.
+
+[[Nice to meet you, Tori|TutorialNode3]]
+[[So were you expecting worse?|TutorialNode4]]
+===
+title: TutorialNode3
+tags: 
+colorID: 0
+position: 442,943
+---
+Nice to meet you, too. So, can you tell me about how you're running this place?
+
+[[Why are you interested?|TutorialNode9]]
+[[It's not super interesting|TutorialNode9]]
+===
+title: TutorialNode4
+tags: 
+colorID: 0
+position: 750,945
+---
+The last guy who owned this place kind of let it go. Got too excited about putting dragon heads on the walls. 
+
+[[To be fair, dragons are cool|TutorialNode6]]
+[[Is that what I was clearing out?|TutorialNode7]]
+[[I tried to put my own spin on it|TutorialNode8]]
+===
+title: TutorialNode5
+tags: 
+colorID: 0
+position: 181,949
+---
+Sorry, that might not have been the best introduction. My name's Tori. 
+
+[[Nice to meet you|TutorialNode3]]
+[[Have you been in here before?|TutorialNode16]]
+===
+title: TutorialNode6
+tags: 
+colorID: 0
+position: 458,1644
+---
+Oh, yeah, but you've still gotta have room for tables.
+
+[[So, what can I do for you?|TutorialNode14]]
+===
+title: TutorialNode7
+tags: 
+colorID: 0
+position: 708,1680
+---
+Oh, you didn't realize? Yeah, that's what they were.
+
+[[So, what can I do for you?|TutorialNode14]]
+===
+title: TutorialNode8
+tags: 
+colorID: 0
+position: 958,1651
+---
+It works. 
+
+[[So, what can I do for you?|TutorialNode14]]
+===
+title: TutorialNode9
+tags: 
+colorID: 0
+position: 154,1651
+---
+When a new person stumbles into town and immediately opens a tavern that serves drinks nobody has heard of, you get curious. 
+
+[[Fair enough|TutorialNode12]]
+[[What do you want to know?|TutorialNode12]] 
+===
+title: TutorialNode12
+tags: 
+colorID: 0
+position: 134,1927
+---
+Can you show me how you go about making drinks? 
+
+[[Sure, what can I get you?|TutorialNode14]]
+[[I guess so|TutorialNode14]]
+===
+title: TutorialNode14
+tags: 
+colorID: 0
+position: 601,2381
+---
+How about you make me a Moscow Mule, whatever that is.
+
+<<order Tori Moscow Mule>>
+
+[[Coming right up|TutorialNode15]]
+===
+title: TutorialNode15
+tags: 
+colorID: 0
+position: 609,2705
+---
+So why don't you walk me through what you're doing. 
+
+[[So, first thing is to look at the recipe|TutorialNode30]]
+===
+title: TutorialNode16
+tags: 
+colorID: 0
+position: 46,1269
+---
+Once or twice. The last guy got a little too excited about hanging dragon heads on the wall. 
+
+[[To be fair, dragons are cool|TutorialNode6]]
+[[Is that what I was clearing out?|TutorialNode7]]
+[[I tried to put my own spin on it|TutorialNode8]]
+===
+title: TutorialNode17
+tags: 
+colorID: 0
+position: 606,3041
+---
+And your recipe book comes up automatically when I order the drink, right?
+
+[[Almost. It won't if I've made the drink before|TutorialNode18]]
+===
+title: TutorialNode18
+tags: 
+colorID: 0
+position: 608,3368
+---
+Oh, okay. But then you can press TAB if you've made it before but need a reminder.
+
+[[Exactly|TutorialNode19]]
+===
+title: TutorialNode19
+tags: 
+colorID: 0
+position: 606,3702
+---
+What then?
+
+[[Next I grab the glass|TutorialNode20]]
+===
+title: TutorialNode20
+tags: 
+colorID: 0
+position: 607,3979
+---
+You grab the glass by hovering over it and clicking the LEFT MOUSE BUTTON, and put it down by clicking the RIGHT MOUSE BUTTON. 
+
+[[That's right|TutorialNode28]]
+===
+title: TutorialNode21
+tags: 
+colorID: 0
+position: 608,4298
+---
+Well, what changes it?
+
+[[Whether the drink is shaken or stirred|TutorialNode22]]
+===
+title: TutorialNode22
+tags: 
+colorID: 0
+position: 611,4584
+---
+Oh, so if the drink is stirred you put it in the glass, and if it's shaken then you put it in the shaker on the counter.
+
+[[Exactly|TutorialNode23]]
+===
+title: TutorialNode23
+tags: 
+colorID: 0
+position: 616,4921
+---
+So next you start putting in ingredients?
+
+[[That's right|TutorialNode24]]
+===
+title: TutorialNode24
+tags: 
+colorID: 0
+position: 585,5259
+---
+It looks like you pick them up the same way, and then pour them in by hovering over the glass and pressing the LEFT MOUSE BUTTON.
+
+[[You've got it|TutorialNode25]]
+===
+title: TutorialNode25
+tags: 
+colorID: 0
+position: 662,5547
+---
+Must be difficult to keep thing organized, since it looks like you can put things down anywhere by pressing the RIGHT MOUSE BUTTON.
+
+[[You have no idea...|TutorialNode26]]
+===
+title: TutorialNode26
+tags: 
+colorID: 0
+position: 575,5853
+---
+For my drink, it looks like you've got vodka, ginger beer, and lime. Once you put those in, do you select the bar spoon to stir?
+
+[[Yes, it's a simple as that|TutorialNode31]]
+===
+title: OrderCompleteTori
+tags: 
+colorID: 0
+position: 496,6189
+---
+Well, wherever you're from, it looks like you've got this down.
+
+[[Thanks for coming in|TutorialNode29]]
+[[Good to meet you|TutorialNode29]]
+
+===
+title: TutorialNode29
+tags: 
+colorID: 0
+position: 662,6672
+---
+See you later, barkeep!
+===
+title: TutorialNode28
+tags: 
+colorID: 0
+position: 877,4170
+---
+Do you always put everything right in the glass? 
+
+[[No, not always|TutorialNode21]]
+===
+title: TutorialNode30
+tags: 
+colorID: 0
+position: 872,3033
+---
+It looks like the recipe book is on the desk in front of you right now.
+
+[[Yeah, we haven't had a chance to implement it yet|TutorialNode19]]
+===
+title: TutorialNode31
+tags: 
+colorID: 0
+position: 814,6018
+---
+And then when you're done, you just click on me to give me the drink.
+===

@@ -1,0 +1,67 @@
+title: Generic1Start
+tags: 
+colorID: 0
+position: 546,277
+---
+Hello!
+
+[[What can I get for you?|Node1]]
+[[Hello!|Node1]]
+===
+title: Node1
+tags: 
+colorID: 0
+position: 417,536
+---
+Is a Vodka Cranberry a type of fruit?
+
+[[No, it's a drink|Node2]]
+[[It's made with fruit|Node2]]
+===
+title: Node2
+tags: 
+colorID: 0
+position: 518,834
+---
+Hmmm... Well, would you recommend it? 
+
+[[Yes|Node3]]
+[[I would recommend anything on the menu|Node3]]
+[[It's not my favorite|Node4]]
+===
+title: Node3
+tags: 
+colorID: 0
+position: 333,1103
+---
+Then that's what I'll have!
+
+<<order Larathil Vodka Cranberry>>
+
+[[Coming right up|OrderComplete]]
+===
+title: Node4
+tags: 
+colorID: 0
+position: 647,1096
+---
+In that case, I'll try whatever a Whiskey Sour is.
+
+<<order Larathil Whiskey Sour>>
+
+[[Coming right up|OrderComplete]]
+===
+title: OrderCompleteLarathil
+tags: 
+colorID: 0
+position: 495,1387
+---
+Thank you!
+===
+title: OrderComplete
+tags: 
+colorID: 0
+position: 495,1387
+---
+Great!
+===

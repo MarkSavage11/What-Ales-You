@@ -31,7 +31,17 @@ ModelImporter:
     6400002: Cylinder
     6400004: Frame
     6400006: Glass
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 4979032b45f66fe45b9168c354e64c1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: 2f92701bf1defea48bbeea031a69ae2d, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

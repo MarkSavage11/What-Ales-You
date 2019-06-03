@@ -26,7 +26,7 @@ position: 344,723
 ---
 I guess I've just... never seen them before. What's a Dark and Stormy? 
 
-[[Ginger beer, rum, and lemon juice|HaveThat]]
+[[Ginger beer, rum, and lime juice|HaveThat]]
 [[Sailors say it looks like storm clouds|HaveThat]]
 [[It's mellow and kind of sweet|HaveThat]]
 ===

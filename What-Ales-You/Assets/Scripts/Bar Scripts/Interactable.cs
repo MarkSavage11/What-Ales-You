@@ -20,6 +20,7 @@ public class Interactable : MonoBehaviour
 
     public void OnMouseEnter()
     {
+
         //If this object has a specified interact reticle, it uses that, otherwise uses the default.
         if(interactReticle != null)
         {

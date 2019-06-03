@@ -33,7 +33,8 @@ public class Shaker : Interactable
 
         this.GetComponent<Holdable>().GoHome();
         GameObject.FindObjectOfType<PickupManager>().SetIsHolding(false);
-
+        this.ingredients.Clear();
+        this.shaken = false;
         Destroy(this.GetComponent<Holdable>());
         
     }

@@ -1,0 +1,262 @@
+title: TutorialStart
+tags: 
+colorID: 0
+position: 550,286
+---
+Wow, this place looks great!
+
+[[Thanks|TNode1]]
+[[Do I know you?|TNode2]]
+===
+title: TNode1
+tags: 
+colorID: 0
+position: 336,558
+---
+I love what you've done with it. 
+
+[[Uh... thanks|TNode5]]
+[[Do I know you?|TNode2]]
+===
+title: TNode2
+tags: 
+colorID: 0
+position: 657,554
+---
+Sorry, probably not. I'm Tori.
+
+[[Nice to meet you, Tori|TNode3]]
+[[So were you expecting worse?|TNode4]]
+===
+title: TNode3
+tags: 
+colorID: 0
+position: 442,943
+---
+Nice to meet you, too. So, can you tell me about how you're running this place?
+
+[[Why are you interested?|TNode9]]
+[[It's not super interesting|TNode9]]
+===
+title: TNode4
+tags: 
+colorID: 0
+position: 750,945
+---
+The last guy who owned this place kind of let it go. Got too excited about putting dragon heads on the walls. 
+
+[[To be fair, dragons are cool|TNode6]]
+[[Is that what I was clearing out?|TNode7]]
+[[I tried to put my own spin on it|TNode8]]
+===
+title: TNode5
+tags: 
+colorID: 0
+position: 181,949
+---
+Sorry, that might not have been the best introduction. My name's Tori. 
+
+[[Nice to meet you|TNode3]]
+[[Have you been in here before?|TNode16]]
+===
+title: TNode6
+tags: 
+colorID: 0
+position: 458,1644
+---
+Oh, yeah, but you've still gotta have room for tables.
+
+[[So, what can I do for you?|TNode14]]
+===
+title: TNode7
+tags: 
+colorID: 0
+position: 708,1680
+---
+Oh, you didn't realize? Yeah, that's what they were.
+
+[[So, what can I do for you?|TNode14]]
+===
+title: TNode8
+tags: 
+colorID: 0
+position: 958,1651
+---
+It works. 
+
+[[So, what can I do for you?|TNode14]]
+===
+title: TNode9
+tags: 
+colorID: 0
+position: 154,1651
+---
+When a new person stumbles into town and immediately opens a tavern that serves drinks nobody has heard of, you get curious. 
+
+[[Fair enough|TNode12]]
+[[What do you want to know?|TNode12]] 
+===
+title: TNode12
+tags: 
+colorID: 0
+position: 134,1927
+---
+Can you show me how you go about making drinks? 
+
+[[Sure, what can I get you?|TNode14]]
+[[I guess so|TNode14]]
+===
+title: TNode14
+tags: 
+colorID: 0
+position: 601,2381
+---
+How about you make me a Moscow Mule, whatever that is.
+
+<<order Tori Moscow Mule>>
+
+[[Coming right up|TNode15]]
+===
+title: TNode15
+tags: 
+colorID: 0
+position: 609,2705
+---
+So why don't you walk me through what you're doing. 
+
+[[So, first thing is to look at the recipe|TNode17]]
+===
+title: TNode16
+tags: 
+colorID: 0
+position: 46,1269
+---
+Once or twice. The last guy got a little too excited about hanging dragon heads on the wall. 
+
+[[To be fair, dragons are cool|TNode6]]
+[[Is that what I was clearing out?|TNode7]]
+[[I tried to put my own spin on it|TNode8]]
+===
+title: TNode17
+tags: 
+colorID: 0
+position: 606,3041
+---
+And your recipe book comes up automatically when I order the drink, right?
+
+[[Almost. It won't if I've made the drink before|TNode18]]
+===
+title: TNode18
+tags: 
+colorID: 0
+position: 608,3368
+---
+Oh, okay. But then you can press TAB if you've made it before but need a reminder.
+
+[[Exactly|TNode19]]
+===
+title: TNode19
+tags: 
+colorID: 0
+position: 606,3702
+---
+What then?
+
+[[Next I grab the glass|TNode20]]
+===
+title: TNode20
+tags: 
+colorID: 0
+position: 607,3979
+---
+And you grab the glass by hovering over it and clicking the LEFT MOUSE BUTTON, and put it down by clicking the RIGHT MOUSE BUTTON. Do you always put everything right in the glass? 
+
+[[No, not always|TNode21]]
+===
+title: TNode21
+tags: 
+colorID: 0
+position: 608,4298
+---
+Well, what changes it?
+
+[[Whether the drink is shaken or stirred|TNode22]]
+===
+title: TNode22
+tags: 
+colorID: 0
+position: 611,4584
+---
+Oh, so if the drink is stirred you put it in the glass, and if it's shaken then you put it in the shaker on the counter.
+
+[[Exactly|TNode23]]
+===
+title: TNode23
+tags: 
+colorID: 0
+position: 616,4921
+---
+So next you start putting in ingredients?
+
+[[That's right|TNode24]]
+===
+title: TNode24
+tags: 
+colorID: 0
+position: 585,5259
+---
+It looks like you pick them up the same way as the glass, and then pour them in by hovering over the glass and pressing the LEFT MOUSE BUTTON.
+
+[[You've got it|TNode25]]
+===
+title: TNode25
+tags: 
+colorID: 0
+position: 662,5547
+---
+You've got everything pretty organized there. Must be difficult, since it looks like you can put things down anywhere by pressing the RIGHT MOUSE BUTTON.
+
+[[You have no idea...|TNode26]]
+===
+title: TNode26
+tags: 
+colorID: 0
+position: 575,5853
+---
+For my Moscow Mule, it looks like you're putting in vodka, ginger beer, and lime juice. Once you put those in, do you select the bar spoon to stir?
+
+[[Yes, it's a simple as that|Blank]]
+===
+title: OrderCompleteTori
+tags: 
+colorID: 0
+position: 496,6189
+---
+Well, whereever you're from, it looks like you've got this down. All you've got to do is click on me to give me the drink!
+
+[[Here you go|TNode28]]
+===
+title: TNode28
+tags: 
+colorID: 0
+position: 578,6460
+---
+Thank you!
+
+[[Thanks for coming in|TNode29]]
+[[Good to meet you|TNode29]]
+===
+title: TNode29
+tags: 
+colorID: 0
+position: 662,6672
+---
+See you later, barkeep!
+===
+title: Blank
+tags: 
+colorID: 0
+position: 496,6189
+---
+Awesome
+===

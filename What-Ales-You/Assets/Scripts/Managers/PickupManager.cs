@@ -12,6 +12,7 @@ public class PickupManager : MonoBehaviour
     private Holdable held;
     public float range;
     [SerializeField] private Transform holdLoc;
+
     public OrderHandler orderHandler;
 
     private Animator anim;
@@ -21,14 +22,15 @@ public class PickupManager : MonoBehaviour
 
     public void Awake()
     {
-        anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
         body = GetComponentInParent<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+
+
         if (Input.GetMouseButtonDown(0))
         {
             if (!isHolding)
@@ -98,7 +100,7 @@ public class PickupManager : MonoBehaviour
                         node.full = true;
                         held.transform.parent = node.transform;
                         this.held = null;
-                       
+                        
                         
                     }
                 }
@@ -115,11 +117,16 @@ public class PickupManager : MonoBehaviour
         {
             
             FinishedDrink fd = this.held.GetComponent<FinishedDrink>();
+            //Debug.Log("Has FD: " + fd != null);
+            //Debug.Log("Current order isnt' null: " + orderHandler.currentOrder != null);
             if (fd != null && orderHandler.currentOrder != null) 
             {
+                
+                Debug.Log(orderHandler.currentOrder);
                 Patron patron = hit.transform.GetComponent<Patron>();
                 if (patron != null)
                 {
+                    
                     patron.AcceptDrink(this.held.GetComponent<FinishedDrink>());
                     this.isHolding = false;
                     return;
@@ -134,10 +141,9 @@ public class PickupManager : MonoBehaviour
             if (other != null)
             {
                 this.held.Interact(other);
-                return;
+                
             }
         }
-       
       
     }
 
@@ -148,23 +154,21 @@ public class PickupManager : MonoBehaviour
     }
 
 
-    private Vector3 pourOffset = new Vector3(.2f, .2f, 0f);
+    private Vector3 pourOffset = new Vector3(.05f, .2f, 0f);
 
     ///ANIMATION CODE
     public IEnumerator PourIngredient(Transform target, float offset)
     {
         FindObjectOfType<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().isFocused = true;
         Vector3 startHandPos = holdLoc.position;
+        Quaternion startHandRotation = holdLoc.rotation;
 
-        holdLoc.SetPositionAndRotation(target.position + pourOffset, Quaternion.identity);
-        //holdLoc.GetComponent<Hand>().Interact(target.position + pourOffset);
-        //holdLoc.localPosition = target.position + pourOffset;
+        holdLoc.SetPositionAndRotation(target.position + pourOffset + new Vector3(offset, 0,0), Quaternion.identity);
        
         anim.SetTrigger("Pour");
         yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
 
-        //holdLoc.GetComponent<Hand>().StopInteract();
-        holdLoc.SetPositionAndRotation(startHandPos, Quaternion.identity);
+        holdLoc.SetPositionAndRotation(startHandPos, startHandRotation);
         FindObjectOfType<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().isFocused = false;
     }
 
@@ -172,7 +176,7 @@ public class PickupManager : MonoBehaviour
     {
         FindObjectOfType<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().isFocused = true;
         Vector3 startHandPos = holdLoc.transform.position;
-        holdLoc.SetPositionAndRotation(target.position + pourOffset, Quaternion.identity);
+        holdLoc.SetPositionAndRotation(target.position + pourOffset +new Vector3(.1f, 0, 0), Quaternion.identity);
         anim.SetTrigger("Pour");
 
         yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
@@ -191,9 +195,8 @@ public class PickupManager : MonoBehaviour
         holdLoc.rotation = Quaternion.identity;
         Quaternion startSpoonRotation = this.held.transform.rotation;
         held.transform.rotation = Quaternion.Euler(90f, 0f, 0f);
-        //held.transform.SetPositionAndRotation(held.transform.position, Quaternion.Euler(90f, 0f, 0f));
         anim.SetTrigger("Stir");
-        yield return new WaitForSeconds(1.333f);
+        yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
         held.transform.rotation = startSpoonRotation;
         holdLoc.SetPositionAndRotation(startHandPos, Quaternion.identity);
         FindObjectOfType<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().isFocused = false;
@@ -210,10 +213,25 @@ public class PickupManager : MonoBehaviour
         isHolding = true;
         shaker.GetComponent<Holdable>().MoveToHand(holdLoc);
         this.held = shaker.GetComponent<Holdable>();
+
+        shaker.transform.Translate(new Vector3(.15f, .05f, .15f));
+        shaker.transform.localRotation = Quaternion.Euler(new Vector3(0f, 42f, -50f));
+
         anim.SetTrigger("Shake");
         yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
+
+        shaker.transform.SetPositionAndRotation(holdLoc.position, holdLoc.rotation);
         shakerTop.GoHome();
     }
 
-
+    public void DebugHandMovement()
+    {
+        Debug.Log("Moving hand");
+        //this.holdLoc.parent = null;
+        Debug.Log("StartingLoc: " + this.holdLoc.position);
+        this.holdLoc.position = new Vector3(0, 1, 2);
+        //this.holdLoc.GetComponent<Hand>().Interact(new Vector3(0, 2, 3));
+        Debug.Log("MovedLoc: " + this.holdLoc.position);
+        
+    }
 }

@@ -16,8 +16,10 @@ public class ShakerTop : Interactable
 
     public void Finish()
     {
-        if(shaker.ingredients.Count > 0)
+        if (shaker.ingredients.Count > 0)
+        {
             StartCoroutine(FindObjectOfType<PickupManager>().Shake(shaker, this));
+        }
     }
 
     public void GoHome()

@@ -9,8 +9,9 @@ public class Holdable : Interactable
     private Vector3 homePos;
     private Quaternion homeRotation;
     public bool ingredient;
+    public float bottleHeight;
 
-    private Transform hand;
+    //private Transform hand;
 
     public void Awake()
     {
@@ -31,14 +32,14 @@ public class Holdable : Interactable
 
         this.transform.SetPositionAndRotation(hand.position, hand.rotation);
         this.transform.SetParent(hand);
-        this.hand = hand;
+        //this.hand = hand;
     }
 
     public void GoHome()
     {
         this.transform.parent = null;
         this.transform.SetPositionAndRotation(homePos, homeRotation);
-        this.hand = null;
+        //this.hand = null;
 
     }
 
@@ -67,7 +68,7 @@ public class Holdable : Interactable
             {
                 if (this.ingredient)
                 {
-                    StartCoroutine(FindObjectOfType<PickupManager>().PourIngredient(container.transform, 0f));
+                    StartCoroutine(FindObjectOfType<PickupManager>().PourIngredient(container.transform, bottleHeight));
                 }
                     
                 container.Add(this);
@@ -83,7 +84,7 @@ public class Holdable : Interactable
 
         if (shaker != null)
         {
-            StartCoroutine(FindObjectOfType<PickupManager>().PourIngredient(shaker.transform, 0f));
+            StartCoroutine(FindObjectOfType<PickupManager>().PourIngredient(shaker.transform, bottleHeight));
             shaker.Add(this);
             return;
 
@@ -95,13 +96,17 @@ public class Holdable : Interactable
             DrinkContainer myDC = this.GetComponent<DrinkContainer>();
             Shaker myShaker = this.GetComponent<Shaker>();
             FinishedDrink myFD = this.GetComponent<FinishedDrink>();
+            
             if(myDC != null)
             {
                 if (myFD != null)
                     Destroy(myFD);
                 myDC.ingredients.Clear();
-            }else if(myShaker != null)
+                StartCoroutine(GameObject.FindObjectOfType<PickupManager>().PourIngredient(other.transform, 0f));
+            }
+            else if(myShaker != null)
             {
+                //StartCoroutine(GameObject.FindObjectOfType<PickupManager>().PourIngredient(other.transform, 0f));
                 myShaker.ingredients.Clear();
                 myShaker.shaken = false;
                 myShaker.GetComponent<Holdable>().GoHome();

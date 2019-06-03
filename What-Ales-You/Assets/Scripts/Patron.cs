@@ -22,6 +22,8 @@ public class Patron : MonoBehaviour
     private NavMeshAgent thisAgent;
     private bool hasOrdered = false;
     private bool hasThankedYou = false;
+    private bool hasFinished = false;
+    private bool reachedBar = false;
 
     public void Start()
     {
@@ -34,7 +36,7 @@ public class Patron : MonoBehaviour
         if(!hasThankedYou && hasOrdered && !FindObjectOfType<Yarn.Unity.DialogueRunner>().isDialogueRunning)
         {
             hasThankedYou = true;
-            LeaveBar(); 
+            StartCoroutine(LeaveBar()); 
         }
 
         //Animation
@@ -64,10 +66,14 @@ public class Patron : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        this.transform.rotation = Quaternion.Euler(0, 180, 0);
-        if (!hasOrdered)
+        if (!reachedBar)
         {
-            FindObjectOfType<Yarn.Unity.DialogueRunner>().StartDialogue(this.textNode);
+            reachedBar = true;
+            //this.transform.rotation = Quaternion.Euler(0, 180, 0);
+            if (!hasOrdered)
+            {
+                FindObjectOfType<Yarn.Unity.DialogueRunner>().StartDialogue(this.textNode);
+            }
         }
     }
 
@@ -81,21 +87,29 @@ public class Patron : MonoBehaviour
 
     }
 
-    public void LeaveBar()
+    public IEnumerator LeaveBar()
     {
+        //anim.SetTrigger("Drink");
+
         try { 
             FindObjectOfType<Yarn.Unity.DialogueRunner>().StartDialogue("OrderComplete" + this.characterName);
         }catch(System.Exception e)
         {
             Debug.Log("No Order Complete node for " + this.characterName);
         }
+        while (FindObjectOfType<Yarn.Unity.DialogueRunner>().isDialogueRunning)
+        {
+            yield return null;
+        }
         thisAgent.SetDestination(endMarker.position);
+        yield return new WaitForSeconds(5);
+        hasFinished = true;
 
     }
 
     public bool HasFinished()
     {
-        return hasThankedYou;
+        return hasFinished;
     }
 
 
